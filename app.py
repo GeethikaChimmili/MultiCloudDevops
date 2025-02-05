@@ -7,7 +7,7 @@ def list_gcp_regions():
     request = compute_v1.ListRegionsRequest(project=project)
     response = client.list(request=request)
 
-    print("Available Google Cloud Regions:")
+    print("Available Multi Cloud Regions:")
     for region in response:
         print(f"- {region.name} (Status: {region.status})")
 
